@@ -30,7 +30,12 @@
             <span class="sr-only">Toggle Menu</span>
         </a>
         <div id="nav" role="navigation" tabindex="-1">
-            <ul>
+            <ul class="site-title">
+                <li>
+                    {{ site_title }}
+                </li>
+            </ul>
+            <ul class="nav">
                 {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
                 <li{% if page.id == current_page.id %} class="active" {% endif %}>
                     <a href="{{ page.url }}">{{ page.title }}</a>

@@ -6490,32 +6490,49 @@ readers do not read off random characters that represent icons */
   transition: height 0.5s ease-in !important;
 }
 
-#nav {
-  padding: 3em 0;
-  text-align: right;
-}
-#nav ul {
+#nav .site-title, #nav .nav {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
-#nav ul li {
+#nav .site-title li, #nav .nav li {
   display: inline-block;
   margin-left: 1em;
   font-weight: bold;
 }
-#nav ul li a {
+
+.site-header {
+  padding: 0 2rem;
+}
+
+#nav {
+  padding: 3em 0;
+  text-align: left;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+#nav .nav li a {
   padding: 0.5rem 1.5rem;
   border: 1px solid white;
   border-radius: 10%;
+  text-decoration: none;
 }
-#nav ul li.active a {
+#nav .nav li a:visited {
+  color: #9E3300;
+}
+#nav .nav li.active a {
   background-color: #117268;
   border: 1px solid black;
   color: white;
 }
+#nav .site-title {
+  font-size: 200%;
+  margin-top: 0;
+  padding: 0.3rem;
+}
 
-#nav a:hover,
+.nav a:hover,
 #nav-toggle:hover {
   background-color: #1fcab8;
 }
@@ -6526,19 +6543,23 @@ readers do not read off random characters that represent icons */
 
 /* Small devices */
 @media (max-width: 767px) {
+  .site-title {
+    display: none;
+  }
+
   #nav {
     clear: both;
     padding: 0;
+    min-width: 90%;
   }
-  #nav ul {
+  #nav .nav {
     padding-bottom: 1em;
+    min-width: 90%;
   }
-  #nav ul li {
+  #nav .nav li {
     display: block;
-    margin-left: 0;
-    text-align: center;
   }
-  #nav ul li a {
+  #nav .nav li a {
     display: block;
     padding: 0.5em 0;
   }
@@ -6586,18 +6607,6 @@ body {
   flex: 0 0 auto;
   background-color: #189E90;
   color: #9E3300;
-}
-
-.site-header {
-  padding: 0 2rem;
-}
-.site-header a,
-.site-header a:visited {
-  color: #9E3300;
-  text-decoration: none;
-}
-.site-header a:hover {
-  color: black;
 }
 
 .site-footer {

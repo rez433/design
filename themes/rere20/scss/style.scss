@@ -40,17 +40,6 @@ body {
     color: $l-fnt-color;
 }
 
-.site-header {
-    padding: 0 2rem;
-    a,
-    a:visited {
-        color: $l-fnt-color;
-        text-decoration: none;
-    }
-    a:hover {
-        color: $l-scnd-color;
-    }
-}
 
 .site-footer {
     text-align: center;

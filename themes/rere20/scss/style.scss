@@ -1,0 +1,91 @@
+@import './variables';
+@import '../../shared/scss/base';
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import './nav';
+
+
+/* Under mina övriga imports */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
+* {
+    font-family: 'Philosopher', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-size: $l-p-font;
+    margin-bottom: $l-p-margin-btn;
+}
+
+h1 {
+    font-size: $l-h1-font;
+}
+
+body {
+    background-color: lighten($l-main-bg, 30%);
+}
+
+/* Resten av min stylesheet */
+.site-header,
+.site-footer {
+    flex: 0 0 auto;
+    background-color: $l-bg-color;
+    color: $l-fnt-color;
+}
+
+.site-header {
+    padding: 0 2rem;
+    a,
+    a:visited {
+        color: $l-fnt-color;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $l-scnd-color;
+    }
+}
+
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+}
+
+.main {
+    flex: 1 0 auto;
+    padding: 2em;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.big-img {
+    width: $l-img-width;
+    height: auto;
+    margin-top: 1.5rem;
+}
+
+img:hover {
+    outline: 1px solid black;
+}
+
+.fab {
+    margin: 0 2rem;
+    color: $l-fnt-color;
+}
+
+.my-git {
+    text-decoration: none;
+    color: black;
+    .fab {
+        padding: 0;
+        margin: 0;
+        color: black;
+        font-size: 120%;
+    }
+}

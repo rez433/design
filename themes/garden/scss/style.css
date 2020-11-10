@@ -1,0 +1,13 @@
+@import url(c:\Users\Admin\dbwebb-kurser\design\me\portfolio\themes\node_modules\normalize.css\normalize.css);
+.auto {
+  margin: auto;
+  text-align: center;
+}
+
+.alert {
+  background-color: #c6538c;
+  border: 1px solid rgba(198, 83, 140, 0.88);
+  height: 300px;
+  width: 600px;
+}
+/*# sourceMappingURL=style.css.map */

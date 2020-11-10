@@ -4,5 +4,13 @@ Tagline: My portfolio.
 Social:
     - title: Link till sidans github repo.
       url: https://github.com/dbwebb-se/design-v3
-      icon: github
+      icon: fab fa-github
+
+    - title: Link till facebook.
+      url: https://facebook.com
+      icon: fab fa-facebook
+      
+    - title: Link till twitter.
+      url: https://twitter.com
+      icon: fab fa-twitter
 ---

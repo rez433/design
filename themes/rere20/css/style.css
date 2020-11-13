@@ -6,7 +6,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -6496,30 +6495,35 @@ readers do not read off random characters that represent icons */
 }
 #nav .site-title li, #nav .nav li {
   display: inline-block;
-  margin-left: 1em;
   font-weight: bold;
+}
+#nav .site-title li a, #nav .nav li a {
+  text-decoration: none;
+  color: #9E3300;
+}
+#nav .site-title li a:visited, #nav .nav li a:visited {
+  color: #9E3300;
 }
 
 .site-header {
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 #nav {
-  padding: 3em 0;
+  padding-top: 1.5rem;
   text-align: left;
   max-width: 1100px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
+#nav .nav li {
+  margin-left: 1em;
+}
 #nav .nav li a {
   padding: 0.5rem 1.5rem;
   border: 1px solid white;
   border-radius: 10%;
-  text-decoration: none;
-}
-#nav .nav li a:visited {
-  color: #9E3300;
 }
 #nav .nav li.active a {
   background-color: #117268;
@@ -6585,7 +6589,7 @@ readers do not read off random characters that represent icons */
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Philosopher", sans-serif;
 }
 
 p {
@@ -6645,6 +6649,15 @@ img:hover {
   margin: 0;
   color: black;
   font-size: 120%;
+}
+
+.container ul li {
+  margin: 1rem 0;
+  list-style: none;
+}
+.container ul li a {
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */

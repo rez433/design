@@ -6468,6 +6468,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/* stylelint-disable max-nesting-depth, selector-max-id */
 .hidden {
   display: none !important;
 }
@@ -6485,24 +6486,23 @@ readers do not read off random characters that represent icons */
 
 .slide {
   overflow-y: hidden !important;
-  -webkit-transition: height 0.5s ease-in !important;
   transition: height 0.5s ease-in !important;
 }
 
-#nav .site-title, #nav .nav {
+#nav .site-title, #nav .nav-ul {
   list-style: none;
   padding: 0;
 }
-#nav .site-title li, #nav .nav li {
+#nav .site-title li, #nav .nav-ul li {
   display: inline-block;
   font-weight: bold;
 }
-#nav .site-title li a, #nav .nav li a {
+#nav .site-title li a, #nav .nav-ul li a {
   text-decoration: none;
-  color: #9E3300;
+  color: #a03300;
 }
-#nav .site-title li a:visited, #nav .nav li a:visited {
-  color: #9E3300;
+#nav .site-title li a:visited, #nav .nav-ul li a:visited {
+  color: #a03300;
 }
 
 .site-header {
@@ -6517,15 +6517,15 @@ readers do not read off random characters that represent icons */
   display: flex;
   justify-content: space-between;
 }
-#nav .nav li {
+#nav .nav-ul li {
   margin-left: 1em;
 }
-#nav .nav li a {
+#nav .nav-ul li a {
   padding: 0.5rem 1.5rem;
   border: 1px solid white;
   border-radius: 10%;
 }
-#nav .nav li.active a {
+#nav .nav-ul li a:active a {
   background-color: #117268;
   border: 1px solid black;
   color: white;
@@ -6536,7 +6536,7 @@ readers do not read off random characters that represent icons */
   padding: 0.3rem;
 }
 
-.nav a:hover,
+.nav-ul a:hover,
 #nav-toggle:hover {
   background-color: #1fcab8;
 }
@@ -6556,14 +6556,14 @@ readers do not read off random characters that represent icons */
     padding: 0;
     min-width: 90%;
   }
-  #nav .nav {
+  #nav .nav-ul {
     padding-bottom: 1em;
     min-width: 90%;
   }
-  #nav .nav li {
+  #nav .nav-ul li {
     display: block;
   }
-  #nav .nav li a {
+  #nav .nav-ul li a {
     display: block;
     padding: 0.5em 0;
   }
@@ -6583,12 +6583,26 @@ readers do not read off random characters that represent icons */
     vertical-align: middle;
   }
 }
-/* Under mina övriga imports */
+/* philosopher-regular - latin */
+@font-face {
+  font-family: "Philosopher";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../../shared/fonts/philosopher-v14-latin-regular.woff2");
+  /* IE9 Compat Modes */
+  src: local(""), url("../../shared/fonts/philosopher-v14-latin-regular.eot?#iefix") format("embedded-opentype"), url("../../shared/fonts/philosopher-v14-latin-regular.woff2") format("woff2"), url("../../shared/fonts/philosopher-v14-latin-regular.woff") format("woff"), url("../../shared/fonts/philosopher-v14-latin-regular.ttf") format("truetype"), url("../../shared/fonts/philosopher-v14-latin-regular.svg#Philosopher") format("svg");
+  /* Legacy iOS */
+}
 * {
   font-family: "Philosopher", sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Philosopher", sans-serif;
 }
 
@@ -6609,8 +6623,8 @@ body {
 .site-header,
 .site-footer {
   flex: 0 0 auto;
-  background-color: #189E90;
-  color: #9E3300;
+  background-color: #189e90;
+  color: #a03300;
 }
 
 .site-footer {
@@ -6625,24 +6639,25 @@ body {
   margin: 0 auto;
 }
 
-.big-img {
+img {
   width: 100%;
   height: auto;
   margin-top: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 img:hover {
-  outline: 1px solid black;
+  outline: 1px solid #020202;
 }
 
 .fab {
   margin: 0 2rem;
-  color: #9E3300;
+  color: #a03300;
 }
 
 .my-git {
   text-decoration: none;
-  color: black;
+  color: #020202;
 }
 .my-git .fab {
   padding: 0;

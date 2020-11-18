@@ -1,12 +1,11 @@
 ---
-Title: Home
-Description: This is our index page.
-icon: fas fa-home
+Title: Om sida
+Description: Sidan om mig
+# hidden: true
 ---
 
-Home page
-==========================
-
+Sidan om mig
+==================
 The source for this page is in `content/index.md`.
 
 Reza heter jag och är intresserad av nya teknologier särskillt webb och alla teknologier kring webb. Jag har lite kunskap med webbutveckling sedan tidigare.

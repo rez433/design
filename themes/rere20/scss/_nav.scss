@@ -1,4 +1,4 @@
-// navbar
+/* stylelint-disable max-nesting-depth, selector-max-id */
 .hidden {
     display: none !important;
 }
@@ -16,22 +16,24 @@
 
 .slide {
     overflow-y: hidden !important;
-    -webkit-transition: height 0.5s ease-in !important;
     transition: height 0.5s ease-in !important;
 }
 
 %list {
     list-style: none;
     padding: 0;
+
     li {
         display: inline-block;
         font-weight: bold;
-        a{
+
+        a {
             text-decoration: none;
             color: $l-fnt-color;
-            &:visited {
-                color: $l-fnt-color;
-            }
+        }
+
+        a:visited {
+            color: $l-fnt-color;
         }
     }
 }
@@ -51,24 +53,27 @@
     display: flex;
     justify-content: space-between;
 
-    .nav {
+    .nav-ul {
         @extend %list;
-        & li {
+
+        li {
             margin-left: 1em;
+
             a {
                 padding: 0.5rem 1.5rem;
-                border: 1px solid white;
+                border: 1px solid rgb(255, 255, 255);
                 border-radius: 10%;
             }
-            &.active a{
+
+            a:active a {
                 background-color: darken($l-bg-color, 10%);
-                border: 1px solid black;
-                color: white;
+                border: 1px solid rgb(0, 0, 0);
+                color: rgb(255, 255, 255);
             }
         }
     }
 
-    .site-title{
+    .site-title {
         @extend %list;
         font-size: 200%;
         margin-top: 0;
@@ -76,7 +81,7 @@
     }
 }
 
-.nav a:hover,
+.nav-ul a:hover,
 #nav-toggle:hover {
     background-color: lighten($l-bg-color, 10%);
 }
@@ -86,25 +91,24 @@
 }
 
 
-
 /* Small devices */
 @media (max-width: 767px) {
     .site-title {
         display: none;
     }
+
     #nav {
         clear: both;
         padding: 0;
         min-width: 90%;
 
-        .nav {
+        .nav-ul {
             padding-bottom: 1em;
             min-width: 90%;
+
             li {
                 display: block;
-                // margin-left: 0;
-                
-                
+
                 a {
                     display: block;
                     padding: 0.5em 0;
@@ -112,6 +116,7 @@
             }
         }
     }
+
     .js #nav-toggle {
         display: block;
         float: right;
@@ -122,7 +127,8 @@
         text-align: center;
         cursor: pointer;
     }
-    .js #nav-toggle>* {
+
+    .js #nav-toggle > * {
         vertical-align: middle;
     }
 }

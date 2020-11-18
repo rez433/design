@@ -1,23 +1,24 @@
 @import './variables';
 @import '../../shared/scss/base';
-@import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/fontawesome';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
 @import './nav';
-
-
-/* Under mina övriga imports */
-// @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
-// @import url('./fonts.css');
+@import './fonts';
 
 
 * {
     font-family: 'Philosopher', sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Philosopher', sans-serif;
 }
 
@@ -55,15 +56,18 @@ body {
     margin: 0 auto;
 }
 
-.big-img {
+img {
     width: $l-img-width;
     height: auto;
     margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover {
+        outline: 1px solid rgb(2, 2, 2);
+    }
 }
 
-img:hover {
-    outline: 1px solid black;
-}
 
 .fab {
     margin: 0 2rem;
@@ -72,11 +76,12 @@ img:hover {
 
 .my-git {
     text-decoration: none;
-    color: black;
+    color: rgb(2, 2, 2);
+
     .fab {
         padding: 0;
         margin: 0;
-        color: black;
+        color: rgb(0, 0, 0);
         font-size: 120%;
     }
 }
@@ -84,6 +89,7 @@ img:hover {
 .container ul li {
     margin: 1rem 0;
     list-style: none;
+
     a {
         text-decoration: none;
         letter-spacing: 2px;

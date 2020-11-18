@@ -17,10 +17,6 @@
         <link rel="canonical" href="{{ current_page.url }}" />
     {% endif %}
 
-    <!-- Insert font choice here -->
-    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
-    {# <link rel="stylesheet" href="{{ theme_url }}/scss/fonts.css" type="text/css" /> #}
-    <!-- End -->
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 </head>
 
@@ -36,7 +32,7 @@
                     <a href="{{ base_url }}">{{ site_title }}</a>
                 </li>
             </ul>
-            <ul class="nav">
+            <ul class="nav-ul">
                 {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
                 <li{% if page.id == current_page.id %} class="active" {% endif %}>
                     <a href="{{ page.url }}">

@@ -3,17 +3,9 @@
     font-family: 'Philosopher';
     font-style: normal;
     font-weight: 400;
-    src: url('../../shared/fonts/philosopher-v14-latin-regular.woff2');
-    /* IE9 Compat Modes */
-    src: local(''),
-    url('../../shared/fonts/philosopher-v14-latin-regular.eot?#iefix') format('embedded-opentype'),
-    /* IE6-IE8 */
-    url('../../shared/fonts/philosopher-v14-latin-regular.woff2') format('woff2'),
-    /* Super Modern Browsers */
-    url('../../shared/fonts/philosopher-v14-latin-regular.woff') format('woff'),
-    /* Modern Browsers */
-    url('../../shared/fonts/philosopher-v14-latin-regular.ttf') format('truetype'),
+    src: /* Modern Browsers */
+    url('../../shared/fonts/philosopher/philosopher-regular.woff2') format('woff2'),
+    url('../../shared/fonts/philosopher/philosopher-regular.woff') format('woff'),
     /* Safari, Android, iOS */
-    url('../../shared/fonts/philosopher-v14-latin-regular.svg#Philosopher') format('svg');
-    /* Legacy iOS */
+    url('../../shared/fonts/philosopher/philosopher-regular.ttf') format('truetype'),
 }

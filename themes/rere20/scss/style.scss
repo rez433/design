@@ -131,7 +131,6 @@ a {
     }
 }
 
-
 .report-page {
     display: grid;
     clear: both;
@@ -191,6 +190,11 @@ a {
         display: grid;
         grid-template-columns: 1fr;
     }
+
+    pre {
+        width: 300px;
+        overflow-x: scroll;
+    }
 }
 
 @media only screen and (min-width: 491px) and (max-width: 767px) {
@@ -209,8 +213,14 @@ a {
         grid-template-columns: 1fr 1fr;
         grid-column: span 2;
     }
+
     .sidebar {
         margin-right: 1rem;
+    }
+
+    pre {
+        max-width: 440px;
+        overflow-x: scroll;
     }
 }
 
@@ -228,5 +238,10 @@ a {
     .project {
         grid-template-columns: repeat(3, 1fr);
         grid-column: span 3;
+    }
+
+    pre {
+        max-width: 700px;
+        overflow-x: scroll;
     }
 }

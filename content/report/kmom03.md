@@ -24,7 +24,8 @@ För card layout har jag använt flexbox blandat med grid då flexbox kändes me
         flex-direction: column;
         border: 1px solid rgb(236, 234, 234);
         border-radius: 1rem;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
+        box-shadow: 0 2px 2px rgba
+        (0, 0, 0, 0.15);
 
         .card-title {
             background-color: $l-fnt-color;
@@ -41,16 +42,20 @@ För card layout har jag använt flexbox blandat med grid då flexbox kändes me
 Jag har skapat några moduler (_fonts, _nav, _variables). Men ingen specifik module för layouten än. scss koden var inte så stor så tänkte att samla alla i en "style.scss" fil.
 
 i sidan för fonts:<br><br>
+
     @font-face {<br>
         font-family: 'Philosopher';<br>
         font-style: normal;<br>
         font-weight: 400;<br>
         src:<br>
         /* Modern Browsers */<br>
-        url('../../shared/fonts/philosopher/philosopher-regular.woff2') format('woff2'),<br>
-        url('../../shared/fonts/philosopher/philosopher-regular.woff') format('woff'),<br>
+        url('../../shared/fonts/philosopher/philosopher-regular.woff2')<br>
+        format('woff2'),<br>
+        url('../../shared/fonts/philosopher/philosopher-regular.woff')<br>
+        format('woff'),<br>
         /* Safari, Android, iOS */<br>
-        url('../../shared/fonts/philosopher/philosopher-regular.ttf') format('truetype'),<br>
+        url('../../shared/fonts/philosopher/philosopher-regular.ttf')<br>
+        format('truetype'),<br>
     }<br>
 
 **Valde du att göra om din sidas layout eller nöjde du dig med report sidan?**<br>
@@ -96,9 +101,9 @@ och i twig "kmom.twig":<br>
                 &lt;div class="links"&gt;<br>
                     {% for links in pages["_sidebar"].meta.links %}<br>
                         {% if links.text == current_page.id[7: 13] %}<br>
-                            &lt;a href="{{ base_url}}/{{links.url}}" class="active"&gt;&lt;/a&gt;<br>
+                            &lt;a href="{{ base_url}}/{{links.url}}"<br> class="active"&gt;&lt;/a&gt;<br>
                         {% else %}<br>
-                            &lt;a href="{{ base_url}}/{{links.url}}"&gt;&lt;/a&gt;<br>
+                            &lt;a href="{{ base_url}}/{{links.url}}"<br>&gt;&lt;/a&gt;<br>
                         {% endif %}<br>
                         {{ links.text }}<br>
                     {% endfor %}<br>
@@ -112,13 +117,3 @@ och i twig "kmom.twig":<br>
 
 **Vilken är din TIL för detta kmom?**<br>
 Att det är lättare om man disignerar för mobil först och sedan använda media query för att designera för desktop och tablet. och att man kan använda vissa php methoder i twig liksom slice[star: end].
-
-
-Länk till report kmom03:<br>
-http://www.student.bth.se/~rere20/dbwebb-kurser/design/me/portfolio/report/kmom03
-
-Länk till portfolio:<br>
-http://www.student.bth.se/~rere20/dbwebb-kurser/design/me/portfolio/
-
-Länk till github:<br>
-https://github.com/rez433/design

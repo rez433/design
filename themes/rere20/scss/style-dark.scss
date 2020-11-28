@@ -1,4 +1,6 @@
 /* stylelint-disable max-nesting-depth, selector-max-id, selector-no-qualifying-type, shorthand-property-no-redundant-values */
+
+
 @import './variables';
 @import '../../shared/scss/base';
 $fa-font-path: '../../shared/fontawesome/webfonts';
@@ -32,20 +34,18 @@ h1 {
     font-size: $l-h1-font;
 }
 
-body {
-    // background-color: lighten($l-main-bg, 30%);
-    color: #222;
-    background: #fff;
-}
-
-/* Resten av min stylesheet */
+body,
 .site-header,
 .site-footer {
-    flex: 0 0 auto;
-    background-color: $l-bg-color;
-    color: $l-fnt-color;
+    color: $l-dark-fnt;
+    background: #121212;
 }
 
+body a,
+.site-header a,
+.site-footer a {
+    color: #809fff;
+}
 
 .site-footer {
     text-align: center;
@@ -71,12 +71,14 @@ body {
     }
 }
 
+
 #palette {
     padding: 1rem 0.5rem 0 0.5rem;
-    box-shadow: 0.1rem 0.3rem 0.8rem $l-bg-color;
+    box-shadow: 0.1rem 0.2rem 0.5rem darken($l-bg-color, 30%);
     border: 2px solid $l-bg-color;
     margin-bottom: 0.5rem;
     border-radius: 2rem;
+    // background: darken($l-fnt-color, 20%);
 }
 
 #drop {
@@ -88,6 +90,7 @@ body {
     border: 1px solid $l-fnt-color;
 }
 
+
 .fab,
 .fa,
 .fas {
@@ -97,12 +100,12 @@ body {
 
 .my-git {
     text-decoration: none;
-    color: rgb(2, 2, 2);
+    color: $l-dark-fnt;
 
     .fab {
         padding: 0;
         margin: 0;
-        color: rgb(0, 0, 0);
+        color: $l-dark-fnt;
         font-size: 120%;
     }
 }
@@ -129,8 +132,8 @@ a {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 
     .card-title {
-        background-color: $l-fnt-color;
-        color: rgb(252, 252, 252);
+        background-color: darken($l-fnt-color, 20%);
+        color: $l-dark-fnt;
         border-radius: 1rem 1rem 0 0;
         padding: 0.5rem 1rem;
         margin: 0;
@@ -141,10 +144,10 @@ a {
 
         .card-link {
             float: right;
-            color: rgb(252, 252, 252);
+            color: $l-dark-fnt;
             padding: 0.2rem 0.7rem;
             border-radius: 50%;
-            background-color: $l-bg-color;
+            background-color: darken($l-bg-color, 20%);
             font-size: 2rem;
             margin-bottom: 0.5rem;
         }
@@ -170,20 +173,10 @@ a {
             &.active {
                 background-color: darken($l-bg-color, 10%);
                 border: 1px solid rgb(0, 0, 0);
-                color: rgb(255, 255, 255);
+                color: $l-dark-fnt;
             }
         }
     }
-}
-
-
-.dark-mode {
-    color: #eee;
-    background: #121212;
-}
-
-.dark-mode a {
-    color: #809fff;
 }
 
 

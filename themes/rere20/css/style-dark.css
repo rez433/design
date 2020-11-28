@@ -6615,17 +6615,17 @@ h1 {
   font-size: 2.2em;
 }
 
-body {
-  color: #222;
-  background: #fff;
-}
-
-/* Resten av min stylesheet */
+body,
 .site-header,
 .site-footer {
-  flex: 0 0 auto;
-  background-color: #189e90;
-  color: #a03300;
+  color: #bebebe;
+  background: #121212;
+}
+
+body a,
+.site-header a,
+.site-footer a {
+  color: #809fff;
 }
 
 .site-footer {
@@ -6653,7 +6653,7 @@ body {
 
 #palette {
   padding: 1rem 0.5rem 0 0.5rem;
-  box-shadow: 0.1rem 0.3rem 0.8rem #189e90;
+  box-shadow: 0.1rem 0.2rem 0.5rem #041917;
   border: 2px solid #189e90;
   margin-bottom: 0.5rem;
   border-radius: 2rem;
@@ -6677,12 +6677,12 @@ body {
 
 .my-git {
   text-decoration: none;
-  color: #020202;
+  color: #bebebe;
 }
 .my-git .fab {
   padding: 0;
   margin: 0;
-  color: black;
+  color: #bebebe;
   font-size: 120%;
 }
 
@@ -6707,8 +6707,8 @@ a {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 .card .card-title {
-  background-color: #a03300;
-  color: #fcfcfc;
+  background-color: #3a1200;
+  color: #bebebe;
   border-radius: 1rem 1rem 0 0;
   padding: 0.5rem 1rem;
   margin: 0;
@@ -6718,10 +6718,10 @@ a {
 }
 .card .card-text .card-link {
   float: right;
-  color: #fcfcfc;
+  color: #bebebe;
   padding: 0.2rem 0.7rem;
   border-radius: 50%;
-  background-color: #189e90;
+  background-color: #0b453f;
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
@@ -6745,16 +6745,7 @@ a {
 .report-page .links a.active {
   background-color: #117268;
   border: 1px solid black;
-  color: white;
-}
-
-.dark-mode {
-  color: #eee;
-  background: #121212;
-}
-
-.dark-mode a {
-  color: #809fff;
+  color: #bebebe;
 }
 
 /* media queries */
@@ -6843,4 +6834,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-dark.css.map */

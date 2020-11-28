@@ -30,7 +30,7 @@ Report
         <h3>Kmom03</h3>
     </div>
     <div class="card-text">
-        <p>SASS är väldigt intressant teknologi.</p>
+        <p>I grid jobbar man med båda horizontal och...</p>
         <a class="card-link" href="report/kmom03">&gt;</a>
     </div>
 </div>
@@ -40,7 +40,7 @@ Report
         <h3>Kmom04</h3>
     </div>
     <div class="card-text">
-        <p>SASS är väldigt intressant teknologi.</p>
+        <p>hemsidor i samma kategorie följer samma trend och ser likadana ut</p>
         <a class="card-link" href="report/kmom04">&gt;</a>
     </div>
 </div>
@@ -49,7 +49,7 @@ Report
         <h3>Kmom05</h3>
     </div>
     <div class="card-text">
-        <p>SASS är väldigt intressant teknologi.</p>
+        <p>SASS</p>
         <a class="card-link" href="report/kmom05">&gt;</a>
     </div>
 </div>
@@ -58,7 +58,7 @@ Report
         <h3>Kmom06</h3>
     </div>
     <div class="card-text">
-        <p>SASS är väldigt intressant teknologi.</p>
+        <p>SASS</p>
         <a class="card-link" href="report/kmom06">&gt;</a>
     </div>
 </div>
@@ -67,7 +67,7 @@ Report
         <h3>Kmom10</h3>
     </div>
     <div class="card-text">
-        <p>SASS är väldigt intressant teknologi.</p>
+        <p>SASS</p>
         <a class="card-link" href="report/kmom10">&gt;</a>
     </div>
 </div>

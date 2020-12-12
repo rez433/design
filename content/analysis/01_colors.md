@@ -113,3 +113,7 @@ Font-familey använd i Hulu är från family "Sans-serif" och består av: 'Graph
 
 ###Results: 
 Hulu följer samma trend av design för sin hemsida och det enda skillnad är andra halvan av sidan då är det information om deras membership plan. Annars hemsidan är väldigt mycket lik andra hemsidor för entertainment.
+
+
+###Skriv ett stycke om dina samlade intryck från resultatet, finns det något värt att nämna, diskutera, att analysera (analys), fick du fram något bra med din studie?
+Från designen på dessa 3 hemsidor ser man trenden med mork-tema. De använder nästan samma design vilken består av en gallery med svart bakgrund och bilder på deras serier och filmer sorterade i fin ordning att passa teman. Mork-tamat ger ett känska av bio där man endast fokuserar på film. Font är en väldig viktig part av design och en poster kan inte se bra ut utan en bra font och typography.Netflix har skapat sin egen font "Netflix sans", men innan det hade de använt "Gotham" som HBO använder. Netflix beslut att skapa egen font var inte motiverade att göra sin design unik utan att spara miljoner av dollar per år för licensing "Gotham" font. (https://www.theverge.com/2018/3/21/17147170/netflix-sans-custom-font-typeface)

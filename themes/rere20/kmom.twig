@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" lang="sv">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,7 +27,7 @@
 
 <body{% if config.theme_config.widescreen %} class="widescreen"{% endif %}">
     <header class="site-header">
-        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="1">
+        <a id="nav-toggle" title="Toggle Menu" role="button" aria-controls="nav" aria-expanded="false" tabindex="-1">
             <i class="fa fa-bars" aria-hidden="true" id="toggler"></i>
             <span class="sr-only">Toggle Menu</span>
         </a>
@@ -40,7 +40,7 @@
             <ul class="nav-ul">
                 {% for page in pages(depthOffset=-1) if page.title and not page.hidden %}
                 <li{% if page.id == current_page.id %} class="active" {% endif %}>
-                    <a href="{{ page.url }}">
+                    <a href="{{ page.url }}" aria-label="{{ page.title }}">
                         {% if page.meta.icon %}
                             <i class="{{page.meta.icon}}"></i>
                         {% else %}

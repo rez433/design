@@ -89,9 +89,9 @@ body {
     border: 1px solid $l-fnt-color;
 }
 
-.fab,
-.fa,
-.fas {
+.site-footer .fab,
+.site-footer .fa,
+.site-footer .fas {
     margin: 0 2rem;
     color: $l-fnt-color;
 }
@@ -171,6 +171,7 @@ a {
             &.active {
                 background-color: darken($l-bg-color, 10%);
                 border: 1px solid rgb(0, 0, 0);
+                border-radius: 0.3rem;
                 color: rgb(255, 255, 255);
             }
         }
@@ -187,6 +188,10 @@ a {
     color: #809fff;
 }
 
+.gallery img,
+.embed-container {
+    border-radius: 2%;
+}
 
 /* media queries */
 @media only screen and (max-width: 490px) {

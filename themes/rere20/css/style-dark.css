@@ -6500,10 +6500,10 @@ readers do not read off random characters that represent icons */
 }
 #nav .site-title li a, #nav .nav-ul li a {
   text-decoration: none;
-  color: #a03300;
+  color: #189e90;
 }
 #nav .site-title li a:visited, #nav .nav-ul li a:visited {
-  color: #a03300;
+  color: #189e90;
 }
 
 .site-header {
@@ -6513,6 +6513,7 @@ readers do not read off random characters that represent icons */
 }
 
 #nav {
+  font-weight: bolder;
   padding-top: 1.5rem;
   text-align: left;
   max-width: 1100px;
@@ -6525,23 +6526,17 @@ readers do not read off random characters that represent icons */
 }
 #nav .nav-ul li a {
   padding: 0.5rem 1.5rem;
+  color: #189e90;
   border: 1px solid white;
   border-radius: 10%;
 }
-#nav .nav-ul li.active a {
-  background-color: #117268;
-  border: 1px solid black;
-  color: white;
+#nav .nav-ul li.active a, #nav .nav-ul li.active .fas {
+  color: #bebebe;
 }
 #nav .site-title {
   font-size: 200%;
   margin-top: 0;
   padding: 0.3rem;
-}
-
-.nav-ul a:hover,
-#nav-toggle:hover {
-  background-color: #1fcab8;
 }
 
 #nav-toggle {
@@ -6593,6 +6588,7 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
   src: url("../../shared/fonts/philosopher/philosopher-regular.woff2") format("woff2"), url("../../shared/fonts/philosopher/philosopher-regular.woff") format("woff"), url("../../shared/fonts/philosopher/philosopher-regular.ttf") format("truetype");
 }
+/* stylelint-disable selector-max-id */
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -6600,7 +6596,10 @@ readers do not read off random characters that represent icons */
   padding: 1em;
 }
 
-.gallery img, embed, object, video {
+.gallery img,
+embed,
+object,
+video {
   max-width: 100%;
 }
 
@@ -6717,14 +6716,14 @@ body a,
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   transform: rotate(45deg);
-  border: 1px solid #a03300;
+  border: 1px solid #481700;
 }
 
-.fab,
-.fa,
-.fas {
+.site-footer .fab,
+.site-footer .fa,
+.site-footer .fas {
   margin: 0 2rem;
-  color: #a03300;
+  color: #481700;
 }
 
 .my-git {
@@ -6759,7 +6758,7 @@ a {
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15);
 }
 .card .card-title {
-  background-color: #3a1200;
+  background-color: black;
   color: #bebebe;
   border-radius: 1rem 1rem 0 0;
   padding: 0.5rem 1rem;
@@ -6795,9 +6794,12 @@ a {
   padding: 0.3rem;
 }
 .report-page .links a.active {
-  background-color: #117268;
-  border: 1px solid black;
-  color: #bebebe;
+  color: #189e90;
+}
+
+.gallery img,
+.embed-container {
+  border-radius: 2%;
 }
 
 /* media queries */

@@ -8,7 +8,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
-@import './nav';
+@import './nav-dark';
 @import './fonts';
 @import './gallery';
 
@@ -92,9 +92,9 @@ body a,
 }
 
 
-.fab,
-.fa,
-.fas {
+.site-footer .fab,
+.site-footer .fa,
+.site-footer .fas {
     margin: 0 2rem;
     color: $l-fnt-color;
 }
@@ -172,13 +172,18 @@ a {
             padding: 0.3rem;
 
             &.active {
-                background-color: darken($l-bg-color, 10%);
-                border: 1px solid rgb(0, 0, 0);
-                color: $l-dark-fnt;
+                color: $l-bg-color;
             }
         }
     }
 }
+
+
+.gallery img,
+.embed-container {
+    border-radius: 2%;
+}
+
 
 
 /* media queries */
